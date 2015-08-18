@@ -1,0 +1,1 @@
+workstation id=Cargoclix.mssql.somee.com;packet size=4096;user id=vistaSomee_SQLLogin_1;pwd=35mk2d7zii;data source=Cargoclix.mssql.somee.com;persist security info=False;initial catalog=Cargoclix

@@ -1,0 +1,27 @@
+﻿<form class="form-login" role="form">
+    <h2 class="form-login-heading">Recipt Delay</h2>
+<!--    <input type="time" class="form-control" placeholder="reason" data-ng-model="receiptDelay.reasonId" required autofocus>-->
+    <table>
+        <tr>
+            <td>
+                {{ selctedBooking.arrivalTime }}  &nbsp;    {{ selctedBooking.location }}
+            </td>
+        </tr>
+    </table>
+   
+    <input type="time" class="form-control" placeholder="Arrival time" data-ng-model="receiptDelay.newArrivalTime" required>
+     Reason for Delay
+    <ul ng-repeat="reason1 in reason">
+        <input type="radio" 
+               data-ng-model="receiptDelay.reasonId"
+               data-ng-value="reason1.reasonId"
+               data-ng-name="myop"
+               
+               >{{reason1.name}}
+    </ul>
+    <textarea class="form-control" placeholder="Please Enter A text" data-ng-model="reason.textMsg" ng-show="receiptDelay.reasonId==4"> </textarea>
+        <button class="btn btn-lg btn-info btn-block" type="submit" data-ng-click="Delay()">Enter</button>
+        <div data-ng-hide="message == ''" data-ng-class="(savedSuccessfully) ? 'alert alert-success' : 'alert alert-danger'">
+            {{message}}
+        </div>
+</form>

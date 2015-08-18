@@ -1,0 +1,50 @@
+﻿<div class="row">
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+    <p>SELECTED SLOT BOOKINGS</p>  &nbsp;
+    
+    <div class="col-md-8">
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th></th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        {{ selctedBooking.arrivalTime }}  &nbsp;    {{ selctedBooking.location }}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#/slotBookings">
+                            I am on my way  <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href={{getIframeSrcDelay()}}>
+                            Report a delay  <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href={{getIframeSrcMessage()}}>
+                            Enter a message  <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                        </a>
+                    </td>
+                </tr>
+                    <!--<td><a ng-click="onMyWayBooking(book.bookingsId)">I am on my way</a></td>
+                    <td><a ng-click="reportADelayBooking(book.bookingsId)">Report a delay</a></td>
+                    <td><a ng-click="MessageBooking(book.bookingsId)">Enter a message </a></td>-->
+               
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-2">
+        &nbsp;

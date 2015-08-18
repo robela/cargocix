@@ -1,0 +1,16 @@
+﻿
+<form class="form-login" role="form">
+    <table>
+        <tr>
+            <td>
+                {{ selctedBooking.arrivalTime }}  &nbsp;    {{ selctedBooking.location }}
+            </td>
+        </tr>
+    </table>
+    <h2 class="form-login-heading">ENTER A MESSAGE</h2>
+    <textarea class="form-control" placeholder="Please Enter A text" data-ng-model="message1.message1" required autofocus> </textarea>
+        <button class="btn btn-lg btn-info btn-block" type="submit" data-ng-click="msg()">Enter</button>
+        <div data-ng-hide="message == ''" data-ng-class="(savedSuccessfully) ? 'alert alert-success' : 'alert alert-danger'">
+            {{message}}
+        </div>
+</form>

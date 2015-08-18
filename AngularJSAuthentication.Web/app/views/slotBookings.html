@@ -1,0 +1,39 @@
+﻿<div class="row">
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+    <p>SLOT BOOKINGS</p>  &nbsp;
+    <p>please select</p>
+    <div class="col-md-8">
+       
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="book in booking">
+                    <td>
+                        {{ book.arrivalTime }}
+                    </td>
+                    <td>
+                        {{ book.location }}
+                    </td>
+                    <td>
+
+                        <!--<a data-ng-click="selectBooking()" href="javascript:;">-->
+                        <a href={{getIframeSrc(book.bookingsId)}}>
+                            <span class="glyphicon glyphicon-circle-arrow-right"></span>
+                        </a>
+                        <!--<td></td>-->
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-2">
+        &nbsp;
